@@ -1,6 +1,6 @@
-package com.maratonajava.javacore.Bmetodos.test;
+package com.maratonajava.javacore.BintroducaoMetodos.test;
 
-import com.maratonajava.javacore.Bmetodos.dominio.Calculadora;
+import com.maratonajava.javacore.BintroducaoMetodos.dominio.Calculadora;
 //parametros primitivos passam uma cópia pra o métodos e não referência
 public class CalculadoraTest04 {
     public static void main(String[] args) {
