@@ -5,15 +5,15 @@ import com.maratonajava.javacore.Bintroducaometodos.dominio.Funcionario;
 
 public class FuncionarioTest {
     public static void main(String[] args) {
-        Funcionario funcionario1 = new Funcionario();
+        Funcionario funcionario = new Funcionario();
 
-        funcionario1.nome = "Maratona";
-        funcionario1.idade = 20;
-//        funcionario1.salarios = new double[]{1200, 987.32, 2000};
+        funcionario.setNome("Maratona");
+        funcionario.setIdade(20);
+        funcionario.setSalarios(new double[]{1200, 987.32, 2000});
 
-        funcionario1.imprime(funcionario1);
+        funcionario.imprime(funcionario);
 
-        Funcionario.calcularMedia(funcionario1.salarios);
+        Funcionario.calcularMedia(funcionario.getSalarios());
 
     }
 }
