@@ -5,17 +5,26 @@ public class Anime {
     private String tipo;
     private int episodios;
     private String genero;
+    private String studio;
 
     public Anime(){}
+
     public Anime(String nome, String tipo, int episodios, String genero) {
+        this();
         this.nome = nome;
         this.tipo = tipo;
         this.episodios = episodios;
         this.genero = genero;
     }
 
+    public Anime(String nome, String tipo, int episodios, String genero, String studio) {
+        this(nome, tipo, episodios, genero);
+        this.studio = studio;
+    }
+
     public void imprime(){
-        System.out.println("Anime: "+ this.nome + " Tipo: " + this.tipo + " Episódio: " + this.episodios + " Genero: " + this.genero);
+        System.out.println("Anime: "+ this.nome + " Tipo: " + this.tipo + " Episódio: " + this.episodios + " Genero: "
+                + this.genero + " Studio: " + this.studio);
     }
 
     public void setNome(String nome){
